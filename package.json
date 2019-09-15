@@ -1,0 +1,42 @@
+{
+  "name": "lab-15",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test-watch": "jest --watchAll",
+    "test": "jest --coverage",
+    "startDB": "mkdir -p ./.db && mongod --dbpath=./.db"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChanceHarmon/lab-15.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChanceHarmon/lab-15/issues"
+  },
+  "homepage": "https://github.com/ChanceHarmon/lab-15#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb-memory-server": "^5.2.3",
+    "mongoose": "^5.6.11",
+    "morgan": "^1.9.1",
+    "supertest": "^4.0.2",
+    "swagger-ui-express": "^4.1.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
